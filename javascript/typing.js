@@ -46,7 +46,7 @@ function typingEffect() {
             removing = false // No more removing characters
         }
 
-    }, 50) // Typing speed, 150 ms
+    }, 150) // Typing speed, 150 ms
 
 }
 
