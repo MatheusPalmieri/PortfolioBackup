@@ -1,0 +1,15 @@
+.themeDark {
+    --background-header: #252526;
+    --background-footer: #2e2e2e;
+    --title: #f0f0f0;
+    --color-primary: #fff;
+    --color-secondary: #2e2e2e;
+}
+
+.themeLight {
+    --background-header: #fefefe;
+    --background-footer: #efefef;
+    --title: #202020;
+    --color-primary: #1f1f1f;
+    --color-secondary: #efefef;
+}

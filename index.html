@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Matheus Palmieri</title>
+
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="assets/website.png" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome / Icons -->
+    <script src="https://kit.fontawesome.com/12279e116a.js" crossorigin="anonymous"></script>
+
+    <!-- DevIcon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/switch.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body class="themeDark">
+    
+<header class="header">
+    <div class="header-notebook">
+        <img src="image/coffee.png" id="notebook" alt="notebook">
+    </div>
+
+    <div class="header-text">
+        <h1 class="name">Matheus Palmieri</h1>
+        
+        <!-- <h2 id="titleCareer" class="title-career">Desenvolvedor Front-end</h2> -->
+        <div>
+            <h2 id="titleCareer" class="title-career"></h2>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <input type="checkbox" class="hide-checkbox" id="switchTheme">
+        <label for="switchTheme" class="toggle">
+          <span class="toggle-button">
+            <span class="crater crater-1"></span>
+            <span class="crater crater-2"></span>
+            <span class="crater crater-3"></span>   
+            <span class="crater crater-4"></span>
+            <span class="crater crater-5"></span>
+            <span class="crater crater-6"></span>
+            <span class="crater crater-7"></span>
+          </span>
+          <span class="star star-1"></span>
+          <span class="star star-2"></span>
+          <span class="star star-3"></span>
+          <span class="star star-4"></span>
+          <span class="star star-5"></span>
+          <span class="star star-6"></span>
+          <span class="star star-7"></span>
+          <span class="star star-8"></span>
+        </label>
+    </div>
+
+    <div class="header-language">
+        <label for="languagePT">
+            <div class="flag">
+                <img src="image/brasil2.png" alt="Brasil">
+            </div>
+        </label>
+        <input type="radio" name="language" id="languagePT" checked class="active">
+
+        <label for="languageEN">
+            <div class="flag">
+                <img src="image/eua2.png" alt="Estados Unidos">
+            </div>
+        </label>
+        <input type="radio" name="language" id="languageEN">
+    </div>
+</header>
+
+<section class="about">
+    <h3 class="title">Sobre Mim</h3>
+
+
+    <article class="panel">
+        <div class="heading">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+
+        <p class="about-paragraph">
+            Oi, me chamo Matheus Palmieri, sou desenvolvedor Front-end. Programo em JavaScript, React Native, Git, GitHub, HTML e CSS. Estudando Bootstrap, PHP e Vue. Cursando atualmente Estrutura e Funcionamento das Redes da Google. Conhecimentos em Designer Gráfico, como Adobe Photoshop, Illustrator, In Design, Premiere e Corel Draw.
+        </p>
+    </article>
+</section>
+
+<main>
+    <section class="projects">
+        <h3 class="title">Projetos</h3>
+        
+        <article class="projectsContainer">
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+        </article>
+    </section>
+</main>
+
+<section class="skills">
+    <h3 class="title">Habilidades</h3>
+        
+    <div class="skills-content">
+        <article class="skillsContainer">
+            <div class="skillsCard"></div>
+            <div class="skillsCard"></div>
+            <div class="skillsCard"></div>
+            <div class="skillsCard"></div>
+            <div class="skillsCard"></div>
+            <div class="skillsCard"></div>
+            <div class="skillsCard"></div>
+            <div class="skillsCard"></div>
+            <div class="skillsCard"></div>
+        </article>
+    </div>
+</section>
+
+<footer class="footer">
+    <article>
+        <a href="https://github.com/MatheusPalmieri" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/matheusandrepalmieri/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UCxirRqX83f-9sw09QFu8ZVQ" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+    </article>
+
+    <!-- <p>Copyright &copy; <span id="year"></span> - Matheus Palmieri</p> -->
+    <p>Copyright &copy; Matheus Palmieri</p>
+</footer>
+
+<!-- Scripts -->
+
+<!-- Theme Mode -->
+<script src="javascript/theme.js"></script>
+<!-- Language Mode -->
+<script src="javascript/language.js"></script>
+<!-- Typing Animation -->
+<script src="javascript/typing.js"></script>
+<!-- Inject Projects -->
+<script src="projects/projects.js"></script>
+<!-- Inject Skills -->
+<script src="Skills/skills.js"></script>
+<!-- Years Footer -->
+<!-- <script src="javascript/footer.js"></script> -->
+
+</body>
+</html>

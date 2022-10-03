@@ -1,0 +1,261 @@
+/* ------ */
+/* Header */
+/* ------ */
+
+.header {
+    height: calc(100vh);
+    /* background-color: var(--background-header); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Notebook */
+
+.header-notebook img {
+    width: 150px;
+}
+
+/* Title */
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: var(--title);
+}
+
+.name {
+    color: var(--title);
+    font-weight: 600;
+}
+
+.title-career {
+    color: var(--title);
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.title-career::after {
+    content: '|';
+    margin-left: 1px;
+    animation: blink .8s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        color: var(--title);
+    }
+    50% {
+        color: transparent;
+    }
+}
+
+/* Switch */
+
+.wrapper {
+    margin-top: 30px;
+}
+
+/* Language */
+
+.header-language {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}
+
+.header-language label {
+    margin: 0 10px;
+}
+
+.header-language input {
+    display: none;
+}
+
+.flag {
+    width: 60px;
+    opacity: .5;
+    transition: opacity .3s;
+}
+
+label[for= "languagePT"] .flag {
+    opacity: 1;
+}
+
+.flag img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* ---------*/
+/* About Me */
+/* ---------*/
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    width: 360px;
+    max-width: 630px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+}
+
+.heading {
+    width: 100%;
+    height: 40px;
+    background-color: var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
+    border-radius: 3px 3px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.circle:nth-child(1) {
+    margin-left: 10px;
+    background-color: #ed4c5c;
+}
+
+.circle:nth-child(2) {
+    background-color: #FDCB58;
+}
+
+.circle:nth-child(3) {
+    background-color: #78B159;
+}
+
+.about-paragraph {
+    padding: 10px;
+    text-align: justify;
+    color: var(--title);
+}
+
+/* -------- */
+/* Projects */
+/* -------- */
+
+.projectsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 250px;
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.project:hover {
+    transform: scale(1.04);
+}
+
+.project-title {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: var(--title);
+}
+
+.project a {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project-img {
+    width: 300px;
+    margin: 10px 0;
+}
+
+.project-img img {
+    width: 100%;
+}
+
+.project-paragraph {
+    font-size: 0.8em;
+    color: aqua;
+}
+
+/* Skills */
+
+.skillsContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 110px);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillsCard {
+    width: 110px;
+    height: 110px;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.skillsCard:hover {
+    transform: scale(1.02);
+    background-color: #222222;
+}
+
+.skillsCard i {
+    font-size: 2.2em;
+}
+
+.skillsCard.activeColor i {
+    color: var(--color-icon);
+}
+
+.skillsCard.activeColor p {
+    color: var(--color-icon);
+}
+
+.skills-title {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Footer */
+
+.footer {
+    height: 100px;
+    background-color: var(--background-footer);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--title);
+}
