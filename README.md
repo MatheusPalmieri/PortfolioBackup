@@ -30,8 +30,6 @@
 
 <!-- Site -->
 
-<h2 align="center">Site</h2>
-
 <p align="center">
  <a href="https://matheuspalmieri.github.io/Portfolio/">Site Do Projeto</a>
 </p>
