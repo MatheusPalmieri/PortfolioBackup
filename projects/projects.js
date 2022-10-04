@@ -2,6 +2,7 @@ var json = `
 {
     "CommentsPost": {
         "id": 1,
+        "preview": "CommentsPost",
         "name": "Comments Post",
         "description": "Criação de interfaces de usuário através da componentização para comentar.",
         "link": "https://commentspost-matheuspalmieri.netlify.app/",
@@ -10,6 +11,7 @@ var json = `
 
     "ReactCards": {
         "id": 2,
+        "preview": "ReactCards",
         "name": "React Cards",
         "description": "Utilização de API para criação de card com imagens, títulos e descrição.",
         "link": "https://reactcards-matheuspalmieri.netlify.app/",
@@ -18,14 +20,16 @@ var json = `
 
     "iMovi": {
         "id": 3,
+        "preview": "iMovi",
         "name": "iMovi",
         "description": "Uso do Bootstrap para estilizar site.",
         "link": "https://matheuspalmieri.github.io/iMovi/",
-        "technology": "HTML | CSS | JavaScript | Bootstrap"
+        "technology": "HTML | CSS | Bootstrap"
     },
 
     "LoginRegex": {
         "id": 4,
+        "preview": "LoginRegex",
         "name": "Login Regex",
         "description": "Projeto com validação de login por regex em JavaScript.",
         "link": "https://matheuspalmieri.github.io/Login-Regex/",
@@ -34,6 +38,7 @@ var json = `
 
     "ThemeMode": {
         "id": 5,
+        "preview": "ThemeMode",
         "name": "Theme Mode",
         "description": "Opção de escolher tema claro/escuro, com mudanças em JavaScript.",
         "link": "https://matheuspalmieri.github.io/Theme-Mode/",
@@ -42,10 +47,11 @@ var json = `
 
     "PokemonAPI": {
         "id": 6,
+        "preview": "PokemonAPI",
         "name": "Pokemon API",
         "description": "Utilização de API de Pokemons.",
         "link": "https://matheuspalmieri.github.io/PokemonAPI/",
-        "technology": "HTML | CSS | JavaScript"
+        "technology": "HTML | CSS | JavaScript | API"
     }
 }
 `
@@ -80,7 +86,7 @@ for(var index = 1; index <= 6; index++) {
             <h4 class="project-title">${nameProject.name}</h4>
 
             <div class="project-img">
-                <img src="projects/image/animation.gif" alt="Prévia projeto ${nameProject.name}">
+                <img src="projects/assets/${nameProject.preview}.gif" alt="Prévia projeto ${nameProject.name}">
             </div>
                
             <p class="project-paragraph">Tecnologias usadas: ${nameProject.technology}</p>

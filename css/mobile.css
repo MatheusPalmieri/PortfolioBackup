@@ -3,8 +3,7 @@
 /* ------ */
 
 .header {
-    height: calc(100vh);
-    /* background-color: var(--background-header); */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,6 +12,10 @@
 }
 
 /* Notebook */
+
+.header-notebook {
+    margin-bottom: 18px;
+}
 
 .header-notebook img {
     width: 150px;
@@ -23,7 +26,7 @@
 .title {
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 2em;
     margin-bottom: 20px;
     color: var(--title);
 }
@@ -35,7 +38,7 @@
 
 .title-career {
     color: var(--title);
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
 }
@@ -104,8 +107,9 @@ label[for= "languagePT"] .flag {
 }
 
 .panel {
-    width: 360px;
-    max-width: 630px;
+    /* width: 400px; */
+    width: 90vw;
+    max-width: 610px;
     border: 1px solid var(--color-primary);
     border-radius: 4px;
 }
@@ -150,9 +154,16 @@ label[for= "languagePT"] .flag {
 /* Projects */
 /* -------- */
 
-.projectsContainer {
+/* .projectsContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+.projectsContainer {
+    display: grid;
+    grid-template-columns: auto-fit;
     align-items: center;
     justify-content: center;
 }
@@ -161,11 +172,10 @@ label[for= "languagePT"] .flag {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 370px;
+    width: 360px;
     height: 250px;
     background-color: var(--color-secondary);
     border-radius: 10px;
-    padding: 10px;
     margin: 15px 0;
     cursor: pointer;
     transition: transform .3s;
@@ -176,7 +186,7 @@ label[for= "languagePT"] .flag {
 }
 
 .project-title {
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-transform: uppercase;
     color: var(--title);
 }
@@ -190,16 +200,16 @@ label[for= "languagePT"] .flag {
 }
 
 .project-img {
-    width: 300px;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .project-img img {
-    width: 100%;
+    width: 330px;
+    height: 160px;
 }
 
 .project-paragraph {
-    font-size: 0.8em;
+    font-size: .9em;
     color: aqua;
 }
 
@@ -251,11 +261,25 @@ label[for= "languagePT"] .flag {
 /* Footer */
 
 .footer {
-    height: 100px;
+    height: 150px;
     background-color: var(--background-footer);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: var(--title);
+}
+
+.footer a {
+    font-size: 1.6em;
+    margin: 10px;
+    transition: color .6s;
+}
+
+.footer a:active, a:focus, a:hover {
+    color: var(--color-link);
+}
+
+.footer article {
+    margin-bottom: 20px;
 }
