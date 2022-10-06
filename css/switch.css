@@ -15,24 +15,24 @@
 }
 
 .toggle {
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-    width: 100px;
-    height: 50px;
-    background: #211042;
-    border-radius: 50px;
-    transition: 500ms;
-    overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 90px;
+  height: 45px;
+  background: #211042;
+  border-radius: 50px;
+  transition: 500ms;
+  overflow: hidden;
 }
 
 .toggle-button {
   position: absolute;
   display: inline-block;
-  top: 6.5px;
+  top: 6px;
   left: 6.5px;
-  width: 36px;
-  height: 36px;
+  width: 33px;
+  height: 33px;
   border-radius: 50%;
   background: #FAEAF1;
   overflow: hidden;
@@ -195,7 +195,7 @@
 
 .hide-checkbox:checked + .toggle .toggle-button {
   background: #F7FFFF;
-  transform: translateX(48px);
+  transform: translateX(42px);
   box-shadow: 0 0 35px 5px rgba(255, 255, 255);
 }
 

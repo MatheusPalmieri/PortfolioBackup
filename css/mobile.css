@@ -26,7 +26,7 @@
 .title {
     text-align: center;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 2.3em;
     margin-bottom: 20px;
     color: var(--title);
 }
@@ -37,14 +37,15 @@
 }
 
 .title-career {
-    color: var(--title);
-    font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--sub-title);
+    font-family: 'Wire One', sans-serif;
+    font-size: 2.3em;
     font-weight: 100;
 }
 
 .title-career::after {
     content: '|';
+    margin-top: 5px;
     margin-left: 1px;
     animation: blink .8s infinite;
 }
@@ -107,18 +108,18 @@ label[for= "languagePT"] .flag {
 }
 
 .panel {
-    /* width: 400px; */
     width: 90vw;
     max-width: 610px;
-    border: 1px solid var(--color-primary);
+    background-color: var(--desktop-background);
+    border: 1px solid var(--desktop-border);
     border-radius: 4px;
 }
 
 .heading {
     width: 100%;
     height: 40px;
-    background-color: var(--color-primary);
-    border-bottom: 1px solid var(--color-primary);
+    background-color: var(--desktop-border);
+    border-bottom: 1px solid var(--desktop-border);
     border-radius: 3px 3px 0 0;
     display: flex;
     align-items: center;
@@ -154,13 +155,6 @@ label[for= "languagePT"] .flag {
 /* Projects */
 /* -------- */
 
-/* .projectsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} */
-
 .projectsContainer {
     display: grid;
     grid-template-columns: auto-fit;
@@ -174,15 +168,11 @@ label[for= "languagePT"] .flag {
     justify-content: center;
     width: 360px;
     height: 250px;
-    background-color: var(--color-secondary);
+    background-color: var(--project-background);
     border-radius: 10px;
     margin: 15px 0;
     cursor: pointer;
     transition: transform .3s;
-}
-
-.project:hover {
-    transform: scale(1.04);
 }
 
 .project-title {
@@ -210,7 +200,7 @@ label[for= "languagePT"] .flag {
 
 .project-paragraph {
     font-size: .9em;
-    color: aqua;
+    color: var(--project-paragraph);
 }
 
 /* Skills */
@@ -227,7 +217,7 @@ label[for= "languagePT"] .flag {
 .skillsCard {
     width: 110px;
     height: 110px;
-    background-color: var(--color-secondary);
+    background-color: var(--skill-background);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -237,17 +227,16 @@ label[for= "languagePT"] .flag {
     cursor: pointer;
 }
 
-.skillsCard:hover {
-    transform: scale(1.02);
-    background-color: #222222;
-}
-
 .skillsCard i {
     font-size: 2.2em;
 }
 
 .skillsCard.activeColor i {
     color: var(--color-icon);
+}
+
+.skillsCard p, i {
+    color: var(--skill-paragraph);
 }
 
 .skillsCard.activeColor p {
@@ -271,13 +260,9 @@ label[for= "languagePT"] .flag {
 }
 
 .footer a {
-    font-size: 1.6em;
+    font-size: 1.8em;
     margin: 10px;
     transition: color .6s;
-}
-
-.footer a:active, a:focus, a:hover {
-    color: var(--color-link);
 }
 
 .footer article {

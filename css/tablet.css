@@ -1,4 +1,28 @@
 @media only screen and (min-width: 800px) {
+
+    /* Notebook */
+
+    .header-notebook img {
+        width: 200px;
+    }
+
+    /* Title */
+
+    .name {
+        font-size: 2.8em;
+    }
+
+    .title-career {
+        font-size: 2.7em;
+        font-weight: 500;
+    }
+
+    /* Language */
+
+    .flag {
+        width: 80px;
+    }
+
     .projectsContainer {
         gap: 20px;
         grid-template-columns: repeat(2, 360px);

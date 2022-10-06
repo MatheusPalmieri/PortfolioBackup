@@ -3,4 +3,22 @@
         gap: 20px;
         grid-template-columns: repeat(3, 360px);
     }
+
+    .project:hover {
+        transform: scale(1.04);
+    }
+
+    .skillsCard:hover {
+    transform: scale(1.02);
+    background-color: var(--skill-background-hover);
+    }
+
+    .footer i {
+        transition: color .2s;
+    }
+
+    .footer a:focus, a:hover i {
+        color: var(--color-link);
+    }
+
 }

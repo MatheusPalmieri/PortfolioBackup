@@ -1,7 +1,24 @@
 .themeDark {
     --background-header: #252526;
     --background-footer: #2e2e2e;
+
+    /* Title and SubTitle */
     --title: #f0f0f0;
+    --sub-title: #c0c0c0;
+    
+    /* Desktop */
+    --desktop-border: #fff;
+    --desktop-background: #202020;
+    
+    /* Project Card */
+    --project-background: #2e2e2e;
+    --project-paragraph: #4AD2FE;
+
+    /* Skill Card */
+    --skill-background: #2e2e2e;
+    --skill-background-hover: #222222;
+    --skill-paragraph: #efefef;
+
     --color-primary: #fff;
     --color-secondary: #2e2e2e;
 }
@@ -9,7 +26,24 @@
 .themeLight {
     --background-header: #fefefe;
     --background-footer: #efefef;
+
+    /* Title and SubTitle */
     --title: #202020;
+    --sub-title: #2f2f2f;
+
+    /* Desktop */
+    --desktop-border: #000;
+    --desktop-background: #efefef;
+
+    /* Project Card */
+    --project-background: #eee;
+    --project-paragraph: #4AD2FE;
+
+    /* Skill Card */
+    --skill-background: #efefef;
+    --skill-background-hover: #ccc;
+    --skill-paragraph: #333;
+
     --color-primary: #1f1f1f;
     --color-secondary: #efefef;
 }
