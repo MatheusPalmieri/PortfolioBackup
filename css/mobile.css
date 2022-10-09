@@ -193,7 +193,7 @@ label[for= "languagePT"] .flag {
     margin: 5px 0;
 }
 
-.project-img img {
+.project-img img, video {
     width: 330px;
     height: 160px;
 }
